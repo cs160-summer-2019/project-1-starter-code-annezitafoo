@@ -2,19 +2,55 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Forecast - Alert!</title>
-	
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <title>Forecast - Alert!</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:700|Open+Sans:400,400i,700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-	<!-- your single-location forecast with alert interface here -->
+  <!-- your single-location forecast interface here -->
+
+  <a href="#">
+    <div class="options"></div>
+  </a>
+  <br><br>
+  <div class="calendar">
+    <div>
+      <h4 id="menu-month">JUNE</h4>
+      <h3 id="menu-date">25</h3>
+    </div>
+  </div>
+  <a href="/weather/comparison/alert/">
+    <div class="menu-city">
+      <h3>Berkeley</h3>
+    </div>
+  </a>
+  <div class="menu-alert">
+
+  </div>
+  <br>
+  <div class="temp-alert">
+    <h1 id="menu-temperature">70</h1>
+    <h2 id="menu-units">&deg;F</h2>
+  </div>
+  <a href="/weather/moreInformation/">
+    <h2 id="menu-description">Hailstorm +</h2>
+  </a>
+  <br>
+
+  <input type="range" min="700" max="2300" step="100" value="1500">
+  <div class="timings">
+    <span>Now</span>
+    <span>11am</span>
+    <span id="alert-time">3pm</span>
+    <span>7pm</span>
+    <span>11pm</span>
+  </div>
 </body>
+
 </html>
-
-
-
-
-

@@ -1,3 +1,301 @@
-li {
-    color: green;
+h1 {
+  font-size: 250px;
+  margin: 0;
+  font-family: 'Arima Madurai', cursive;
+  color: black;
 }
+
+h2,
+h3,
+h4,
+li{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+h4 {
+  font-size: 40px;
+}
+
+body {
+  background-color: #EBFDFF;
+}
+
+.options {
+  width: 100%;
+  height: 5rem;
+  margin: 2rem;
+  background: url("../assets/options.png") left top;
+  background-size: 5rem;
+  background-repeat: no-repeat;
+}
+
+.header {
+  width: 100%;
+  height: 9rem;
+  background-color: #246CFE;
+}
+
+.back {
+  display: inline-block;
+  float: left;
+  width: 40%;
+  height: 5rem;
+  margin: 2rem;
+  background: url("../assets/back.png") left top;
+  background-size: 5rem;
+  background-repeat: no-repeat;
+}
+
+.home {
+  display: inline-block;
+  float: right;
+  width: 40%;
+  height: 5rem;
+  margin: 2rem;
+  background: url("../assets/home.png") right top;
+  background-size: 5rem;
+  background-repeat: no-repeat;
+}
+
+.calendar {
+  display: flex;
+  float: left;
+  width: 50%;
+  height: 20rem;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/calendar.png") center center;
+  background-size: 20rem;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+#menu-month {
+  padding-top: 5rem;
+  font-weight: bold;
+}
+
+#menu-date {}
+
+.menu-city {
+  display: flex;
+  float: right;
+  width: 50%;
+  height: 20rem;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/berkeley.png") center center;
+  background-size: 20rem;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: black;
+}
+
+.menu-alert {
+  display: block;
+  width: 100%;
+  z-index: 100;
+  height: 20rem;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/alert.png") center center;
+  background-size: 20rem;
+  background-repeat: no-repeat;
+}
+
+.temp {
+  display: flex;
+  width: 100%;
+  height: 50em;
+  /*     flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/s-sunny.png") center center;
+  background-size: 50em;
+  background-repeat: no-repeat;
+  margin: 16em 0 -8em 0;
+}
+
+.temp-alert {
+  display: flex;
+  width: 100%;
+  height: 50em;
+  /*     flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/hailstorm.png") center center;
+  background-size: 50em;
+  background-repeat: no-repeat;
+  margin: -10em 0 -8em 0;
+}
+
+#menu-description {
+  text-align: center;
+  margin-bottom: 2em;
+  color: black;
+}
+
+input[type=range] {
+  height: 8em;
+  -webkit-appearance: none;
+  margin: -0.1em 10%;
+  width: 80%;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1em;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000;
+  background: #3071A9;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -11px;
+}
+
+.timings {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 10%;
+  font-size: 40px;
+}
+
+#alert-time {
+  background-color: #fa8072;
+}
+
+.compare-date,
+.compare-time {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8rem;
+  padding: 4rem;
+  background-color: white;
+}
+
+.compare-date li,
+.compare-time li {
+  display: inline;
+  padding: 0 4rem;
+  font-size: 40px;
+}
+
+#compare-main {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.city1 {
+  width: 100%;
+  height: 18rem;
+  padding: 2rem;
+  background: url("../assets/6am.png") center center;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+}
+
+.city2 {
+  width: 100%;
+  height: 18rem;
+  padding: 2rem;
+  background: url("../assets/2pm.png") center center;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+}
+
+.compare-left {
+  display: inline-block;
+  float: left;
+  width: 65%;
+}
+
+#compare-tdiff {
+  padding: 0.5em 0;
+}
+
+#compare-description {
+  font-style: italic;
+}
+
+.compare-alert {
+  display: block;
+  width: 100%;
+  z-index: 100;
+  height: 15rem;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/alert.png") center center;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+}
+
+.city1 .compare-temp {
+  display: flex;
+  float: right;
+  width: 35%;
+  height: 20em;
+  /*     flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/slightlyCloudy.png") center center;
+  background-size: 20em;
+  background-repeat: no-repeat;
+  margin: -2em 0 -8em 0;
+}
+
+.city2 .compare-temp {
+  display: flex;
+  float: right;
+  width: 35%;
+  height: 20em;
+  /*     flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/mostlyCloudy.png") center center;
+  background-size: 20em;
+  background-repeat: no-repeat;
+  margin: -2em 0 -8em 0;
+}
+
+.compare-add {
+  width: 80%;
+  height: 8em;
+  background-color: #24FE94;
+  border-radius: 5%;
+  margin: 2em 10%;
+  padding: 2em 20%;
+  text-align: center;
+}
+
+#compare-alert-time {
+  background-color: #fa8072;
+  font-weight: bold;
+  font-size: 60px;

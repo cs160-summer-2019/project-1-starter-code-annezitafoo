@@ -2,14 +2,77 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Comparison - Alert!</title>
-	
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <title>Comparison - Alert!</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:700|Open+Sans:400,400i,700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-	<!-- your comparison interface with alert here -->
+  <!-- your single-location forecast interface here -->
+  <div class="header">
+    <a href="#">
+      <div class="back"></div>
+    </a>
+    <a href="/weather/forecast/alert/">
+      <div class="home"></div>
+    </a>
+  </div>
+
+  <div class="compare-date">
+    <ol>
+      <li>24</li>
+      <li id="compare-alert-time">JUNE 25</li>
+      <li>26</li>
+    </ol>
+  </div>
+
+  <div class="compare-time">
+    <ol>
+      <li>5am</li>
+      <li id="compare-main">6am</li>
+      <li>7am</li>
+    </ol>
+  </div>
+
+
+  <div class="city1">
+    <div class="compare-left">
+      <h3 id="compare-city">Berkeley, CA</h3>
+      <h4 id="compare-tdiff"><br></h4>
+      <h3 id="compare-description">Slightly Cloudy</h3>
+    </div>
+    <div class="compare-temp">
+      <h2 id="compare-temperature">56</h2>
+      <h4 id="compare-units">&deg;F</h4>
+    </div>
+    <div class="compare-alert">
+      
+    </div>
+  </div>
+  <div class="city2">
+    <div class="compare-left">
+      <h3 id="compare-city">London, UK</h3>
+      <h4 id="compare-tdiff">(2pm)</h4>
+      <h3 id="compare-description">Mostly Cloudy</h3>
+    </div>
+    <div class="compare-temp">
+      <h2 id="compare-temperature">73</h2>
+      <h4 id="compare-units">&deg;F</h4>
+    </div>
+  </div>
+
+  <a href="#">
+    <div class="compare-add">
+      <h3>Add more cities</h3>
+    </div>
+  </a>
+
+
 </body>
+
 </html>
